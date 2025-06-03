@@ -24,6 +24,8 @@ app.use(cors({
   credentials: true
 }));
 
+app.use(express.json());
+
 //API route
 app.use('/api/destinations', destinationRoutes);
 
